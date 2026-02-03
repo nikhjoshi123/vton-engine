@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "AI Fitting Labs | Global Engine",
+  "version": "1.0",
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"],
+  "host_permissions": ["://api.fashn.ai/"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["embed.js"]
+    }
+  ],
+  "action": {
+    "default_title": "AI Fitting Labs"
+  }
+}
